@@ -1,0 +1,9 @@
+from selenium import webdriver
+from getpass import getpass
+
+driver = webdriver.Chrome(executable_path="C:\Dev\WebDriver\chromedriver_win32 (7)\chromedriver.exe")
+driver.get("http://www.facebook.com/")
+print(driver.title)#title of the page
+print(driver.current_url)   #url of page
+print(driver.page_source)   #html code
+driver.close()#close the page
